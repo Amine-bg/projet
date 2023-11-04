@@ -24,8 +24,8 @@ def enregistrer_joueur():
             print("L'adresse e-mail n'est pas au format attendu ('nomprenom@gmail.com'). Veuillez réessayer.")
 
     while True:
-        p = input("Entrez un mot de passe (8 à 12 caractères, au moins une minuscule, une majuscule, un chiffre et un caractère spécial) : ")
-        if ((8 <= len(p) <= 12) and
+        p = input("Entrez un mot de passe ( au moins une minuscule, une majuscule, un chiffre et un caractère spécial et de taille 8) : ")
+        if (len(p) == 8) and
                 any(x in string.ascii_uppercase for x in p) and
                 any(x in string.ascii_lowercase for x in p) and
                 any(x in string.digits for x in p) and
